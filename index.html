@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+	<link rel="stylesheet" type="text/css" href="sources/styles/main.css">
+
+	<script type="text/javascript" src="sources/js/serviceMen.js"></script>
+
+	<title></title>
+
+</head>
+<body>
+
+
+	<!--Меню -->
+	<nav class="navbar navbar-expand-lg fixed-top">
+	    <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img class="img-fluid" src="sources/img/logo.png">
+            </a>
+
+	        <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavId">
+	            <ul class="navbar-nav mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#carouselId">Главная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#info">Новости</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#foodBlock">Статьи</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#depBlock">Услуги</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sumBlock">Кейсы</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacts">Калькулятор</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacts">Обратная связь</a>
+                    </li>
+	            </ul>
+	        </div>
+		</div>
+	</nav>
+
+
+	<!--Услуги -->
+	<h3 class="container-fluid text-center p-3">Услуги</h3>
+	<div class="row" id="services">
+
+        <div class="col-md-4 text-center infBox" onmouseover="serviceShow(0)" onmouseout="serviceHide(0)">
+            <img src="sources/img/cashback.png" class="img-fluid mt-5" >
+            <p>Услуга 1</p>
+            <p hidden>Красочный рассказ о услуге<br>Красочный рассказ о услуге<br>Красочный рассказ о услуге</p>
+        </div>
+
+        <div class="col-md-4 text-center infBox" onmouseover="serviceShow(1)" onmouseout="serviceHide(1)">
+            <img src="sources/img/cashback.png" class="img-fluid mt-5">
+            <p>Услуга 2</p>
+            <p hidden>Красочный рассказ о услуге<br>Красочный рассказ о услуге<br>Красочный рассказ о услуге</p>
+        </div>
+
+        <div class="col-md-4 text-center infBox" onmouseover="serviceShow(2)" onmouseout="serviceHide(2)">
+            <img src="sources/img/cashback.png" class="img-fluid mt-5">
+            <p>Услуга 3</p>
+            <p hidden>Красочный рассказ о услуге<br>Красочный рассказ о услуге<br>Красочный рассказ о услуге</p>
+        </div>
+
+        <div class="col-md-4 text-center infBox" onmouseover="serviceShow(3)" onmouseout="serviceHide(3)">
+            <img src="sources/img/cashback.png" class="img-fluid mt-5">
+            <p>Услуга 4</p>
+            <p hidden>Красочный рассказ о услуге<br>Красочный рассказ о услуге<br>Красочный рассказ о услуге</p>
+        </div>
+
+        <div class="col-md-4 text-center infBox" onmouseover="serviceShow(4)" onmouseout="serviceHide(4)">
+            <img src="sources/img/cashback.png" class="img-fluid mt-5">
+            <p>Услуга 5</p>
+            <p hidden>Красочный рассказ о услуге<br>Красочный рассказ о услуге<br>Красочный рассказ о услуге</p>
+        </div>
+
+        <div class="col-md-4 text-center infBox" onmouseover="serviceShow(5)" onmouseout="serviceHide(5)">
+            <img src="sources/img/cashback.png" class="img-fluid mt-5">
+            <p> Услуга 6</p>
+            <p hidden>Красочный рассказ о услуге<br>Красочный рассказ о услуге<br>Красочный рассказ о услуге</p>
+        </div>
+    </div>
+
+    <!--Калькулятор -->
+    <div id="depBlock" class="depBlock">
+
+        <div class="container depContainer">
+
+            <h3 class="container-fluid text-center p-3">Калькулятор</h3>
+
+            <div class="row border border-secondary my-4 px-4">
+                
+                <div class="col-md-6 py-5">
+                    <label>Услуги</label>
+                    <select class="form-control okrug">
+                        <option value="cent" disabled="" selected="" hidden=""></option>
+                        <option value="cent">Услуга1</option>
+                        <option value="sev">Услуга2</option>
+                        <option value="sev_vost">Услуга3</option>
+                        <option value="vost">Услуга4</option>
+                        <option value="y_vost">Услуга5</option>
+                        <option value="y">Услуга6</option>
+                        <option value="y_zap">Услуга7</option>
+                        <option value="zap">Услуга8</option>
+                        <option value="sev_zap">Услуга9</option>
+                    </select>
+                </div>
+
+                <div class="col-md-6 py-5">
+                    <label>Срок сдачи</label>
+                    <select class="form-control region">
+                    	<option value="0">Срок сдачи1</option>
+                    	<option value="1">Срок сдачи2</option><option value="2">Срок сдачи3</option>
+                    	<option value="3">Срок сдачи4</option>
+                    	<option value="4">Срок сдачи5</option>
+                    	<option value="5">Срок сдачи6</option>
+                    	<option value="6">Срок сдачи7</option>
+                    	<option value="7">Срок сдачи8</option>
+                    	<option value="8">Срок сдачи9</option>
+                    	<option value="9">Срок сдачи10</option></select>
+                </div>
+
+
+                <div class="col-md-4 py-5 text-center d-flex align-items-bottom justify-content-bottom">
+                    <button type="submit" class="btn btn-outline-secondary btn-block findDepBtn" onclick="findDepBtn()">Найти</button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+	<!--Контакты, свзязь -->
+	<div class="row footer" id="contacts">
+            
+        <h3 class="container-fluid text-center p-5">Обратная связь</h3>
+
+        <div class="col-md-7 d-flex justify-content-center justify-content-md-end">
+
+            <form id="form">
+                <div class="form-group">
+                    <input class="form-control" type="text" placeholder="Введите имя"><br>
+                    <input class="form-control" type="text" placeholder="Введите email"><br>
+                    <textarea class="form-control" type="text" placeholder="Ваше сообщение" cols="60" rows="10"></textarea><br>
+                    <button class="btn btn-lg">Отправить</button>
+                </div>
+            </form>
+
+        </div>
+
+        <div class="col-md-5">
+                
+            <p><img src="sources/logo/skype.png" class="logo"> Skype</p><br>
+            <p><img src="sources/logo/icq.png" class="logo">icq</p><br>
+            <p><img src="sources/logo/mail.png" class="logo">mail</p><br>
+            <p><img src="sources/logo/phone.png" class="logo">phone</p><br>
+            <a href="https://twitter.com"><img src="sources/logo/twitter.png" class="logo"></a>
+            <a href="https://facebook.com"><img src="sources/logo/facebook.png" class="logo"></a>
+            <a href="https://linkin.com"><img src="sources/logo/linked.png" class="logo"></a>
+            <a href="https://google.com"><img src="sources/logo/google.png" class="logo"></a>
+            <a href="https://youtube.com"><img src="sources/logo/youtube.png" class="logo"></a>
+
+        </div>
+    </div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+</body>
+</html>
